@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Join us in providing food, resources, and life-changing support to children and families in need.",
+          "Born To Give Foundation supports children and families with food, essentials, and community outreach. Donate, volunteer, and restore hope with us.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

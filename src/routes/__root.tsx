@@ -81,16 +81,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Born To Give Foundation supports underserved children and families with food, essentials, and community outreach. Donate, volunteer, and help us restore hope.",
+          "Born To Give Foundation supports children and families with food, essentials, and community outreach. Donate, volunteer, and restore hope with us.",
       },
       { property: "og:title", content: "Born To Give Foundation — Together We Can Change Lives" },
       {
         property: "og:description",
         content:
-          "Join Born To Give Foundation in providing food, resources, and life-changing support to children and families in need.",
+          "Born To Give Foundation supports children and families with food, essentials, and community outreach. Donate, volunteer, and restore hope with us.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Born To Give Foundation — Together We Can Change Lives" },
+      { name: "twitter:description", content: "Born To Give Foundation supports children and families with food, essentials, and community outreach. Donate, volunteer, and restore hope with us." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b5cc3ff3-4d47-44a3-b952-a93d4af19a1e/id-preview-d77668ff--4a1550da-e5d2-4e82-93ae-ad0ea6be6169.lovable.app-1784761782806.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b5cc3ff3-4d47-44a3-b952-a93d4af19a1e/id-preview-d77668ff--4a1550da-e5d2-4e82-93ae-ad0ea6be6169.lovable.app-1784761782806.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
