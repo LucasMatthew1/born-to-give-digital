@@ -6,7 +6,8 @@ import {
   Globe2, Leaf, HandCoins, ArrowRight, ChevronDown, Search, Send,
   Star, Quote, Heart,
 } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
+
 import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
 import { SectionHeader } from "@/components/site/Section";
