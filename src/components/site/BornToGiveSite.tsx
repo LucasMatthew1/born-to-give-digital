@@ -307,7 +307,7 @@ function Stories() {
 /* ---------------- Events ---------------- */
 function useCountdown(target: Date) {
   const [now, setNow] = useState(() => new Date());
-  useMemo(() => {
+  useEffect(() => {
     const id = setInterval(() => setNow(new Date()), 60_000);
     return () => clearInterval(id);
   }, []);
@@ -317,6 +317,7 @@ function useCountdown(target: Date) {
   const m = Math.floor((diff / (1000 * 60)) % 60);
   return { d, h, m };
 }
+
 
 function EventCard({ e }: { e: { title: string; date: Date; place: string; tag: string; img: string } }) {
   const { d, h, m } = useCountdown(e.date);
