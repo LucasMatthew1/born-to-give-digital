@@ -965,14 +965,13 @@ function FooterCol({ title, links }: { title: string; links: string[] }) {
 /* ---------------- Floating Donate ---------------- */
 function FloatingDonate() {
   const [show, setShow] = useState(false);
-  useMemo(() => {
+  useEffect(() => {
     const onScroll = () => setShow(window.scrollY > 800);
-    if (typeof window !== "undefined") {
-      onScroll();
-      window.addEventListener("scroll", onScroll, { passive: true });
-      return () => window.removeEventListener("scroll", onScroll);
-    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
   return (
     <a
       href="#donate"
