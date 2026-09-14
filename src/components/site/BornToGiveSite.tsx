@@ -13,7 +13,7 @@ import { Hero } from "@/components/site/Hero";
 import { SectionHeader } from "@/components/site/Section";
 import { Counter } from "@/components/site/Counter";
 
-import logo from "@/assets/logo.png.asset.json";
+import logo from "@/assets/logo.png";
 import missionImg from "@/assets/thanksgiving.jpg.asset.json";
 import volunteerGive from "@/assets/volunteer-give.jpg.asset.json";
 import kidsMeal from "@/assets/kids-meal.png.asset.json";
@@ -923,7 +923,7 @@ function Footer() {
     <footer className="border-t border-border bg-card">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-4">
         <div>
-          <img src={logo.url} alt="Born To Give Foundation" className="h-12 w-auto" />
+          <img src={logo} alt="Born To Give Foundation" className="h-12 w-auto" />
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
             A nonprofit foundation restoring hope and dignity to children and families through food, support, and community.
           </p>
