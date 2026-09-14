@@ -36,7 +36,7 @@ export function Nav() {
           }`}
         >
           <a href="#top" className="flex items-center gap-2">
-            <img src={logo.url} alt="Born To Give Foundation" className="h-10 w-auto" />
+            <img src={logo} alt="Born To Give Foundation" className="h-10 w-auto" />
           </a>
           <nav className="hidden items-center gap-1 lg:flex">
             {links.map((l) => (
